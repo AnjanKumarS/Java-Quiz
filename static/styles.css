@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 600px;
+    margin: auto;
+}
+
+.quiz-card:hover {
+    transform: scale(1.02);
+}
+
+.quiz-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.question-box {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.question-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.progress-bar {
+    height: 10px;
+    background: #28a745 !important;
+    transition: width 0.4s ease-in-out;
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.form-check-input {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+.score-box {
+    font-size: 2rem;
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Modern Styling */
+body {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Quiz Card Styling */
+.quiz-card {
+    background: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.quiz-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Start Quiz Button */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Centering Cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+

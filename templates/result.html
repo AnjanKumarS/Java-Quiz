@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="result-heading">🎉 Your Score 🎉</h1>
+        <div class="score-box shadow-lg p-4">
+            <h2 class="score-text">{{ score }} / {{ total }}</h2>
+            <p class="score-message fw-bold">
+                {% if score >= total * 0.8 %}
+                <span class="text-success">Excellent! 🔥</span>
+                {% elif score >= total * 0.5 %}
+                <span class="text-warning">Good Try! 👍</span>
+                {% else %}
+                <span class="text-danger">Keep Practicing! 💡</span>
+                {% endif %}
+            </p>
+        </div>
+        <a href="/" class="btn btn-primary mt-4">🏠 Back to Home</a>
+    </div>
+</body>
+
+</html>
